@@ -13,7 +13,7 @@ function genRandomInt(max) {
 }
 
 export default function Header() {
-  const description = reactDescriptions[genRandomInt(5)];
+  const description = reactDescriptions[genRandomInt(4)];
 
   return (
     <header>
