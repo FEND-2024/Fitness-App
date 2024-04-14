@@ -6,6 +6,7 @@ const reactDescriptions = [
   "Weltmeister",
   "Sportliebhaber",
   "Athlet",
+  "Sportler",
 ];
 
 function genRandomInt(max) {
