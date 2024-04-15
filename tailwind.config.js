@@ -2,11 +2,7 @@ module.exports = {
   content: ["./src/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-<<<<<<< HEAD
       colors: {
-=======
-            colors: {
->>>>>>> 78020ccd6792c0c32e7b3e16543624f560c052d6
         "fitness-color-dark": "#202430",
         "fitness-color-medium": "#3A4151",
         "fitness-color-light": "#FBFBFB",
