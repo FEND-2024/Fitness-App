@@ -3,14 +3,6 @@
 @import "tailwindcss/utilities";
 
 body {
-  /* background-color: #202430; */
-  margin: 0;
-  font-family: "poppins";
-  font-size: 22px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: "poppins";
 }
