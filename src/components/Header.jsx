@@ -24,7 +24,7 @@ export default function Header() {
       <img
         src={reactImg}
         alt="fitness-Startbild"
-        className="h-80 justify-center text-center mx-auto mt-5 "
+        className="h-72 justify-center text-center mx-auto mt-5 "
       />
     </header>
   );
