@@ -1,6 +1,6 @@
 import { useQuery, gql } from "@apollo/client";
 
-const GET_PROGRAMME = gql`
+const GET_PROGRAMS = gql`
   query GetPrograms {
     programs {
       id
@@ -16,7 +16,7 @@ const GET_PROGRAMME = gql`
   }
 `;
 function Programme() {
-  const { loading, error, data } = useQuery(GET_PROGRAMME);
+  const { loading, error, data } = useQuery(GET_PROGRAMS);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
@@ -25,7 +25,7 @@ function Programme() {
 
   return (
     <>
-      <div>Test</div>
+      <div className="text-white font-bold text-3xl">Test</div>
     </>
   );
 }
