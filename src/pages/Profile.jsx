@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 
-function Home() {
+function Profil() {
   return (
     <div>
       <Header />
@@ -9,5 +9,4 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
+export default Profil;

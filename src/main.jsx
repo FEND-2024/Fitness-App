@@ -6,6 +6,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import "./index.css";
 import Home from "./pages/Home";
 import Programme from "./pages/Programme";
+import Profile from "./pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/programme",
     element: <Programme />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
 ]);
 

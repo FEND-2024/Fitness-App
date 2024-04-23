@@ -1,10 +1,13 @@
 import { useQuery, gql } from "@apollo/client";
+import Navigation from "../components/Navigation";
 
 const GET_PROGRAMS = gql`
   query GetPrograms {
     programs {
       id
       name
+      description
+      focus
       duration
       workoutsWithDay {
         day
@@ -25,7 +28,25 @@ function Programme() {
 
   return (
     <>
-      <div className="text-white font-bold text-3xl">Test</div>
+      <div>
+        <div className="text-white text-3xl m-6 text-decoration-line: underline">
+          Programme:{" "}
+        </div>
+        <br></br>
+
+        {data.programs.map((program) => (
+          <div className="text-white m-6 text-3xl " key={program.id}>
+            <div className="mb-16">
+              <button className="h-16 bg-emerald-100 rounded-xl text-blue-950">
+                <a href="#">{program.name}</a>
+              </button>
+            </div>
+            <div>
+              <Navigation />
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
